@@ -8,13 +8,18 @@ export class CommandSay extends Command{
     }
 
     execute(msg: Message, args: string[]): void {
-        if(args.length < 1){
-            msg.reply('mohon masukan kata kata!')
+        if (args.length < 1) {
+            msg.reply(
+                '*Hi..Aku Nanat Bot!*\n' + 
+                '*Gunakan perintah [.menu] untuk menampilkan*\n\n' +
+                '*📖MENU📖*\n\n' +
+                '*Selamat menikmati fitur kami!*'
+            );
             return;
         }
-        msg.reply(args.join(' '))
+        msg.reply(`*${args.join(' ')}*`);
     }
     
+    
+
 }
-
-
