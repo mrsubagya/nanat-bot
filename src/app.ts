@@ -1,4 +1,5 @@
 import { Client, LocalAuth } from "whatsapp-web.js";
+const keep_alive =require('./keep_alive.js')
 import qrcode from "qrcode-terminal";
 import commands from "./commands";
 
